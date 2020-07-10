@@ -1,1 +1,6 @@
 .DS_Store
+godot/.import/*
+godot/.vscode/
+*.import
+asset-exporter/export_time.db
+godot/export_presets.cfg
