@@ -19,6 +19,14 @@ config/name="GMTK2020"
 run/main_scene="res://SCENE/StartMenu.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/dpi/allow_hidpi=true
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
