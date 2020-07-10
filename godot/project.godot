@@ -16,13 +16,13 @@ _global_script_class_icons={
 [application]
 
 config/name="GMTK2020"
-run/main_scene="res://SCENE/StartMenu.tscn"
+run/main_scene="res://SCENE/StartMenu/StartMenu.tscn"
 config/icon="res://icon.png"
 
 [display]
 
-window/size/width=1280
-window/size/height=720
+window/size/width=1920
+window/size/height=1080
 window/dpi/allow_hidpi=true
 window/stretch/mode="viewport"
 window/stretch/aspect="keep_height"
