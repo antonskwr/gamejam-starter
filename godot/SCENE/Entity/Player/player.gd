@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const MAX_SPEED = 70
+const MAX_SPEED = 400
 const FRICTION = 0.2
 
 var motion = Vector2()
@@ -8,6 +8,9 @@ var motion = Vector2()
 func _physics_process(delta) -> void:
 	update_motion(delta)
 	move_and_slide(self.motion)
+
+	if Input.is_action_just_pressed("accept"):
+		JoystickManager.rumble_subtle()
 
 func update_motion(delta) -> void:
 	if Input.is_action_pressed("move_up") and not Input.is_action_pressed("move_down"):
