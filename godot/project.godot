@@ -19,6 +19,10 @@ config/name="GMTK2020"
 run/main_scene="res://SCENE/StartMenu/StartMenu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+AudioManager="*res://singleton/AudioManager.tscn"
+
 [display]
 
 window/size/width=1920
