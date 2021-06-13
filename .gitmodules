@@ -1,0 +1,3 @@
+[submodule "aseprite-exporter"]
+	path = aseprite-exporter
+	url = https://github.com/antonskwr/aseprite-exporter.git

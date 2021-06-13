@@ -13,5 +13,12 @@ fi
 
 projects_dir="aseprite/"
 export_dir="godot/assets/aseprite/"
-db_path="asset-exporter/export_time.db"
-go run asset-exporter/exporter.go $aseprite_run_cmd $projects_dir $export_dir $db_path
+db_path="export_time.db"
+
+if [ -e ./aseprite-exporter/aseprite-exporter ]
+then
+  ./aseprite-exporter/aseprite-exporter export -execpath $aseprite_run_cmd -source $projects_dir -target $export_dir -db $db_path -mute
+else
+  echo './aseprite-exporter/aseprite-exporter no such file, use "go build" to build aseprite-exporter'
+  exit 1
+fi
