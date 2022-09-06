@@ -24,6 +24,8 @@ AudioManager="*res://singleton/AudioManager.tscn"
 ConfigManager="*res://singleton/config_manager.gd"
 JoystickManager="*res://singleton/joystick_manager.gd"
 SceneManager="*res://singleton/scene_manager.gd"
+Signals="*res://singleton/signals.gd"
+SignalManager="*res://singleton/signal_manager.gd"
 
 [display]
 

@@ -1,13 +1,11 @@
 extends Control
 
-signal exit_game
-
 onready var _resume_button: = $CenterContainer/VBoxContainer/ButtonsContainer/ResumeButton
 onready var _exit_button: = $CenterContainer/VBoxContainer/ButtonsContainer/ExitButton
 # onready var _viewport: = get_viewport()
 
 func _ready() -> void:
-  # set_as_toplevel(true) #??????????????????????????????????
+  # set_as_toplevel(true)
   _resume_button.connect("pressed", self, "_on_Resume_pressed")
   _exit_button.connect("pressed", self, "_on_Exit_pressed")
   # _viewport.connect("size_changed", self, "_on_viewport_size_changed")
@@ -27,8 +25,7 @@ func _on_Resume_pressed() -> void:
 
 func _on_Exit_pressed() -> void:
   get_tree().paused = false
-  emit_signal("exit_game")
+  SignalManager.emit_signal(Signals.exit_game)
 
-#??????????????????????????????????
 # func _on_viewport_size_changed() -> void:
 #   self.set_margins_preset(PRESET_WIDE)

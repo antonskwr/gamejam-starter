@@ -4,7 +4,7 @@ onready var _pause_menu: = $PauseMenu/Pause
 onready var _level = $GameWorld/Level
 
 func _ready() -> void:
-  _pause_menu.connect("exit_game", self, "_on_exit_game")
+  SignalManager.connect(Signals.exit_game, self, "_on_exit_game")
   _level.initialize()
 
 func change_level(scene_path: String) -> void:
