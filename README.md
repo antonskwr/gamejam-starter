@@ -7,7 +7,7 @@ cd <target_dir>
 
 ## Required tech
 
-* Godot
+* Godot 3.5
 * Aseprite 1.2.40
 * Go (at least 1.14)
 * Git
