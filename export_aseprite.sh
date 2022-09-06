@@ -15,6 +15,15 @@ projects_dir="aseprite/"
 export_dir="godot/assets/aseprite/"
 db_path="export_time.db"
 
+if [ ! -d "$projects_dir" ]; then
+  echo "ERROR: $projects_dir directory does not exist"
+  exit 2
+fi
+
+if [ ! -d "$export_dir" ]; then
+  mkdir -p $export_dir
+fi
+
 if [ -e ./aseprite-exporter/aseprite-exporter ]
 then
   ./aseprite-exporter/aseprite-exporter export -execpath $aseprite_run_cmd -source $projects_dir -target $export_dir -db $db_path -mute
