@@ -20,4 +20,4 @@ func _on_exit_game() -> void:
   SceneManager.goto_scene("res://SCENE/StartMenu/StartMenu.tscn")
 
 # func _on_Portal_player_entered(target_map_path: String) -> void:
-# 	change_level(target_map_path)
+#   change_level(target_map_path)

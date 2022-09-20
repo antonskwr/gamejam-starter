@@ -1,5 +1,15 @@
 # Repo setup
 
+## Editor indentation setup (before you start)
+
+GDScript indentation for this repo is 2 spaces
+
+* Create empty Godot project and open it
+* Go to Editor->Editor Settings...
+* Under "Text Editor/Indent" set type to "Spaces" and size to "2"
+
+## Cloning
+
 ```
 git clone <link_to_repo> <target_dir>
 cd <target_dir>
